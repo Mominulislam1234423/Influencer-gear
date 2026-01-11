@@ -102,6 +102,49 @@ main{
 }
 
 
+ span{
+    color: #E02C6D;
+    background-color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.end{
+    width: 80%;
+    margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ margin-top: 70px;
+ gap: 3rem;
+}
+.end .discription{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.end .discription button{
+    padding: 10px 20px;
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.foot{
+    width: 100%;
+    height: 200px;
+    background-color: #1c1c1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 30px;
+}
+
 @media screen and (max-width: 576px) {
     header {
         width: 100%;
@@ -145,5 +188,13 @@ main{
     }
     .collection-itmes{
         grid-template-columns: 1fr;
+    }
+    .end{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .end .discription{
+        align-items: center;
     }
 }
