@@ -5,7 +5,7 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
-
+/* header section */
 header {
     width: 80%;
     margin: 0 auto;
@@ -57,6 +57,49 @@ nav ul li a {
     border-radius: 25px;
     border: none;
 }
+.banner-img{
+    background-image: url("../images/Circle\ design.svg");
+}
+
+/* logo section style */
+main{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(218, 217, 217);
+    margin-bottom: 50px;
+}
+
+.Collection h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.collection-itmes{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 30px;
+}
+
+.collection-itmes div{
+    height: 340px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 10px;
+    box-shadow: 1px 2px 2px 3px gainsboro;
+}
+.collection-itmes p{
+    font-size: 0.9rem;
+    color: gray;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -90,5 +133,17 @@ nav ul li a {
     }
     br{
         display: none;
+    }
+    .logo{
+        width: auto;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .banner{
+        gap: 0;
+    }
+    .collection-itmes{
+        grid-template-columns: 1fr;
     }
 }
